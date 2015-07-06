@@ -1,0 +1,77 @@
+#categories
+  max-width: 560px
+  display: block
+  margin: 0 auto
+  height: 700px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-bottom: 100px
+  h1
+    font-family: 'Neuton', sans
+    text-align: center
+  .img-row
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 31px
+    figure
+      position: relative
+      opacity: 0
+      transform: translateY(-20px)
+      transition: all 0.3s ease-in-out
+      overflow: hidden
+      cursor: pointer
+
+      &.is-showing
+        opacity: 1
+        transform: translateY(0px)
+
+      &:hover
+        figcaption
+          left: -10%
+        img
+          transform: scale(1.1)
+      figcaption
+        position: absolute
+        bottom: -1px
+        left: 110%
+        right: 0
+        transition: all 0.3s ease-in-out
+
+      img
+        display: block
+        transform: scale(1)
+        transition: all 0.3s ease-in-out
+
+// Media Queries
+@media (max-width: 567px)
+  body
+    // overflow: hidden
+
+  #categories
+    display: block
+    margin: 0 auto
+    text-align: center
+    .img-row
+      display: block
+      // margin: 0 auto
+      margin-left: 0
+      float: right
+
+      figure
+        margin-left: 0
+        overflow: hidden
+
+        &:hover
+
+
+          figcaption
+            position: absolute
+            bottom: -1px
+            left: 1px
+            right: 0
+
+        img
+          margin: 0 auto

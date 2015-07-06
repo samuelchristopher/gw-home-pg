@@ -1,0 +1,138 @@
+header
+  max-width: 535px
+  margin: 90px auto 0px auto
+
+  h1
+    min-height: 40px
+    text-align: center
+    font-size: 48px
+    font-weight: 400
+    font-family: 'Neuton', sans
+
+    .text
+      display: inline-block
+      margin: 0
+.typed-cursor
+    display: none
+
+// Buttons
+header
+ .button-container
+   margin: 0 auto
+   max-width: 340px
+   .sign-in-button
+     a
+       transition: all 0.3s ease-in-out
+       cursor: pointer
+       line-height: .5
+       background-color: $before-hover
+       color: white
+       display: inline-block
+       padding: 15px 25px
+       text-transform: uppercase
+       float: left
+       font:
+         family: 'Montserrat', sans-serif
+         weight: bold
+         size: 21px
+       text-decoration: none
+       &:hover
+         background-color: $after-hover
+
+
+
+header
+  .button-container
+    .sign-up-button
+      a
+        border: solid 3px $before-hover
+        border-radius: 0
+        line-height: .5
+        color: $before-hover
+        display: inline-block
+        padding: 12px 20px
+        text-transform: uppercase
+        float: right
+        font:
+          family: 'Montserrat', sans-serif
+          weight: bold
+          size: 21px
+        margin: 0
+        text-decoration: none
+        transition: all 0.3s ease-in-out
+
+        &:hover
+          border: solid 3px $after-hover
+          color: $after-hover
+// Arrow
+.ion-ios-arrow-down
+  font-size: 50px
+  position: absolute
+  bottom: 79%
+  margin-left: 25px
+  color: $before-hover
+  text-align: center
+  transition: all 0.3s ease-in-out
+  line-height: 0.5
+  cursor: pointer
+  // -webkit-animation-duration: 3s
+  // -webkit-animation-delay: 2s
+  -webkit-animation-iteration-count: 3
+
+  &:hover
+    color: $after-hover
+
+
+// Media Queries
+@media (max-width: 550px)
+  header
+    .ion-ios-arrow-down
+      bottom: 83%
+@media (max-width: 420px)
+  header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .button-container
+      .sign-in-button
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        a
+          font-size: 18px
+          display: flex
+      .sign-up-button
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        a
+          font-size: 18px
+          margin: 5px
+  header
+    .ion-ios-arrow-down
+      bottom: 83%
+
+  header
+    h1
+      font-size: 40px
+  .ion-ios-arrow-down
+    margin-left: -15px
+@media (max-width: 320px)
+  header
+    h1
+      font-size: 35px
+    .button-container
+      .sign-in-button
+        a
+          font-size: 15px
+      .sign-up-button
+        a
+          font-size: 15px
+  header
+    margin-top: 50px
